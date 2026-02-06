@@ -23,7 +23,7 @@ services:
       - 0.0.0.0:${PI_HOLE_WEB_ADMIN_PORT}:80/tcp
     environment:
       TZ: Europe/Berlin
-      FTLCONF_webserver_api_password: /run/secrets/pi_hole_webpw
+      WEBPASSWORD_FILE: pi_hole_webpw
       FTLCONF_dns_upstreams: cldflrd # containername of cloudflared
       FTLCONF_dns_listeningMode: 'ALL' # Otherwise DNS requests outside of this docker-compose network are ignored
     volumes:
