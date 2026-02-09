@@ -20,7 +20,7 @@ services:
     ports:
       - ${HOST_IP}:53:53/udp
       - ${HOST_IP}:53:53/tcp
-      - 0.0.0.0:${PI_HOLE_WEB_ADMIN_PORT}:80/tcp
+      - ${HOST_IP}:${PI_HOLE_WEB_ADMIN_PORT}:80/tcp
     environment:
       TZ: Europe/Berlin
       WEBPASSWORD_FILE: pi_hole_webpw
