@@ -1,4 +1,4 @@
-# Pi-hole with Cloudflared
+# Pi-hole with DNS-Crypt-Proxy
 
 ## Setup
 
@@ -15,3 +15,8 @@ docker-compose up -d
 
 - [docker-pi-hole](https://github.com/pi-hole/docker-pi-hole/releases)
 - [cloudflared](https://github.com/cloudflare/cloudflared/releases)
+
+
+## Quad9 Resolvers
+
+https://raw.githubusercontent.com/Quad9DNS/dnscrypt-settings/main/dnscrypt/quad9-resolvers.md
